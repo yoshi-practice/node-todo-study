@@ -34,4 +34,10 @@ function list() {
             .map(t => t[0]);
 }
 
-module.exports = { todo, list };
+function doneList() {
+    return Array.from(tasks)
+        .filter(isDone)
+        .map(t => t[0]);
+}
+
+module.exports = { todo, list, done, doneList };
