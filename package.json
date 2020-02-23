@@ -2,7 +2,9 @@
   "name": "todo",
   "version": "1.0.0",
   "main": "index.js",
-  "script": {"node test.js"},
+  "script": {
+    "test": "node test.js"
+  },
   "repository": "git@github.com:yoshi-practice/node-todo-study.git",
   "author": "yoshi1125hisa <yoppy1125yoppy@gmail.com>",
   "license": "MIT"
