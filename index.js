@@ -14,4 +14,9 @@ function isDone(taskAndIsDonePair){
     return taskAndIsDonePair[1]; // true/false
 }
 
+// isNotDone?
+function isNotDone(taskAndIsDonePair){
+    return !isDone(taskAndIsDonePair); // true/false
+}
+
 module.exports = { todo };
