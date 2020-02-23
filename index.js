@@ -19,4 +19,11 @@ function isNotDone(taskAndIsDonePair){
     return !isDone(taskAndIsDonePair); // true/false
 }
 
-module.exports = { todo };
+// return list
+function list() {
+    return Array.from(tasks)
+            .filter(isNotDone)
+            .map(t => t[0]);
+}
+
+module.exports = { todo, list };
