@@ -5,8 +5,16 @@
 const tasks = new Map();
 
 // Add task
-function todo(tasks){
+function todo(task){
     tasks.set(task, false);
+
+}
+
+// Done task
+function done(task){
+    if (tasks.has(task)) {
+        tasks.set(task, true);
+    }
 }
 
 // isDone?
