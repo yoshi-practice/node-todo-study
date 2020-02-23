@@ -17,6 +17,11 @@ function done(task){
     }
 }
 
+// Delete tasks
+function del(task){
+    tasks.delete(task);
+}
+
 // isDone?
 function isDone(taskAndIsDonePair){
     return taskAndIsDonePair[1]; // true/false
@@ -40,4 +45,4 @@ function doneList() {
         .map(t => t[0]);
 }
 
-module.exports = { todo, list, done, doneList };
+module.exports = { todo, list, done, doneList, del };
